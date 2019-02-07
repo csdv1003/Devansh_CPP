@@ -68,7 +68,7 @@ void main()
  char c;
  int ch;
  clrscr();
- cout<<"\n\tTHIS IS THE PROJECT FOR THE FINAL PRACTICAL EXAM";
+ cout<<"\n\tTHIS IS THE PROJECT FOR THE SOURCE CODE MANAGEMENT LAB";
  cout<<"\n\t-------------------------------------------------";
  do
  {
