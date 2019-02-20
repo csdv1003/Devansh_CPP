@@ -7,6 +7,8 @@
 #include<string.h>
 #include<stdio.h>
 #include<process.h>
+#include<iomanip.h>
+
 struct dict
  {
   char w[30];
@@ -28,7 +30,7 @@ struct dict
 int count=10;
 int i;
 
-void find_word(dict b[])
+void find_words(dict b[])
 {
  char s[30];
  int flag=0;
@@ -66,7 +68,7 @@ void display_all(dict c[])
    cout<<"\n"<<c[i].w<<"\t\t"<<c[i].m<<"\n";
 
 }
-void main()
+int main()
  {
  char c;
  int ch;
@@ -84,7 +86,7 @@ void main()
   cout<<"\n\n* Enter your choice::";
   cin>>ch;
   if(ch==1)
-  find_word(d);
+  find_words(d);
   if(ch==2)
   add_word(d);
   if(ch==3)
@@ -96,5 +98,6 @@ void main()
  cout<<"\n\nDo you want to enter more(y/n)::";
  cin>>c;
  }while(c=='y');
+return 0;
  getch();
 }
